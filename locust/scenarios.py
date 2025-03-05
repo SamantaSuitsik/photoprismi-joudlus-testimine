@@ -42,7 +42,7 @@ class UserTasks(TaskSet):
         # Find a file
         file_name = random.choice(file_list)
         logging.info("Photo: %s", file_name)
-        file_path = os.path.join("/home/samanta/kool/loputoo/locust/photos", file_name)
+        file_path = os.path.join("photos", file_name)
 
         with open(file_path, "rb") as f:
             file_content = f.read()
